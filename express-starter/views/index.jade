@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  h1= '上海地铁运行状态 @ ' + date
+  h1= '打工人今天去工地还顺利吗？’
   table.highlight.centered
     thead
       tr
@@ -12,6 +12,3 @@ block content
         tr
           td=val.name + '号线'
           td=val.status
-  ul
-    each val, index in data
-      li= '轨道交通' + val.name + '号线 => ' + val.status
